@@ -10,6 +10,8 @@ export default function App() {
   return (
     <>
       <div id="scroll-progress"></div>
+      <div className="hero-line"></div>
+      <div className="scroll-dot" id="scrollDot"></div>
       <Nav />
       <Outlet />
       <Footer />

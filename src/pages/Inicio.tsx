@@ -11,8 +11,6 @@ export default function Inicio() {
 
   return (
     <>
-      <div className="hero-line"></div>
-      <div className="scroll-dot" id="scrollDot"></div>
 <main>
     <section className="hero" aria-labelledby="hero-title">
       <div className="grid-canvas-wrap">
