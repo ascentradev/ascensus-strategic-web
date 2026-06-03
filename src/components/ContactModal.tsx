@@ -34,6 +34,19 @@ export default function ContactModal() {
         <form onSubmit={handleSubmit}>
           <div className="form-group"><label htmlFor="m-nombre">Nombre completo</label><input id="m-nombre" type="text" name="nombre" placeholder="Su nombre" required /></div>
           <div className="form-group"><label htmlFor="m-email">Correo electrónico</label><input id="m-email" type="email" name="email" placeholder="su@correo.com" required /></div>
+          <div className="form-group">
+            <label htmlFor="m-servicio">Servicio de interés</label>
+            <select id="m-servicio" name="servicio" required>
+              <option value="" disabled selected>Seleccione un servicio</option>
+              <option value="asesoria-bursatil">Asesoría Bursátil</option>
+              <option value="portafolios">Portafolios de Inversión</option>
+              <option value="planes-ahorro">Planes de Ahorro</option>
+              <option value="seguros-vida">Seguros de Vida con Ahorro</option>
+              <option value="real-estate">Real Estate</option>
+              <option value="asesoria-legal">Asesoría Legal de Activos</option>
+              <option value="otro">Otro / Consulta general</option>
+            </select>
+          </div>
           <div className="form-group"><label htmlFor="m-msg">Mensaje</label><textarea id="m-msg" name="mensaje" placeholder="¿En qué podemos ayudarle?"></textarea></div>
           <button type="submit" className="btn btn-primary" style={{ width: '100%', justifyContent: 'center' }}>Enviar solicitud</button>
         </form>
