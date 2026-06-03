@@ -2,6 +2,19 @@
 
 Sitio web de la firma de asesoría financiera Ascentrategic. React + TypeScript + Vite, desplegado en GitHub Pages.
 
+## Repositorios
+
+| Repo | Propósito | URL en producción |
+|---|---|---|
+| [`ascentradev/ascensus-strategic-web`](https://github.com/ascentradev/ascensus-strategic-web) | **Producción** — desplegado en GitHub Pages | `www.ascentrategic.com` |
+| [`dramosol/acscensus_mvp_react`](https://github.com/dramosol/acscensus_mvp_react) | Desarrollo / fork personal | — |
+
+> ⚠️ Los cambios deben pushearse a **`ascentradev/ascensus-strategic-web`** (remote `prod`) para que se reflejen en `www.ascentrategic.com`.
+>
+> ```bash
+> git push prod main
+> ```
+
 ## Configuración del formulario de contacto (Web3Forms)
 
 El formulario de contacto usa [Web3Forms](https://web3forms.com/) para enviar correos a `info@ascentrategic.com` sin necesidad de backend.
