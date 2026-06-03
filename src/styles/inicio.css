@@ -204,6 +204,7 @@
       .hero-line,.scroll-dot{display:none}
       .modal-box{padding:36px 24px}
       .socio-grid{grid-template-columns:1fr;gap:40px}
+      .socio-photo{max-width:280px}
       .socio-photo img{max-width:280px}
       .contact-inline{flex-direction:column;gap:10px}
       .contact-inline span+span::before{content:none}
