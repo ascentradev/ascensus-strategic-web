@@ -37,12 +37,12 @@ export default function ContactModal() {
       mensaje:  fd.get('mensaje'),
     };
     try {
-      const res = await fetch(SCRIPT_URL, {
+      await fetch(SCRIPT_URL, {
         method: 'POST',
+        mode: 'no-cors',
         body: JSON.stringify(payload),
       });
-      const json = await res.json();
-      setStatus(json.ok ? 'success' : 'error');
+      setStatus('success');
     } catch {
       setStatus('error');
     }
