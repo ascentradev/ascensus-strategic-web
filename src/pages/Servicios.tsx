@@ -12,9 +12,9 @@ export default function Servicios() {
       <div className="grid-canvas-wrap">
         <Squares
           speed={0.3}
-          squareSize={64}
+          squareSize={96}
           direction="diagonal"
-          borderColor="rgba(198,170,76,0.20)"
+          borderColor="rgba(198,170,76,0.15)"
           hoverFillColor="rgba(198,170,76,0.08)"
         />
       </div>

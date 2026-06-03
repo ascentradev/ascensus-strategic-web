@@ -16,9 +16,9 @@ export default function Inicio() {
       <div className="grid-canvas-wrap">
         <Squares
           speed={0.3}
-          squareSize={64}
+          squareSize={96}
           direction="diagonal"
-          borderColor="rgba(198,170,76,0.35)"
+          borderColor="rgba(198,170,76,0.22)"
           hoverFillColor="rgba(198,170,76,0.08)"
         />
       </div>
@@ -126,9 +126,9 @@ export default function Inicio() {
       <div className="grid-canvas-wrap">
         <Squares
           speed={0.3}
-          squareSize={64}
+          squareSize={96}
           direction="diagonal"
-          borderColor="rgba(198,170,76,0.35)"
+          borderColor="rgba(198,170,76,0.22)"
           hoverFillColor="rgba(198,170,76,0.08)"
         />
       </div>
