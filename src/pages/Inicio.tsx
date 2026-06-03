@@ -18,7 +18,7 @@ export default function Inicio() {
           speed={0.3}
           squareSize={64}
           direction="diagonal"
-          borderColor="rgba(198,170,76,0.20)"
+          borderColor="rgba(198,170,76,0.35)"
           hoverFillColor="rgba(198,170,76,0.08)"
         />
       </div>
@@ -128,7 +128,7 @@ export default function Inicio() {
           speed={0.3}
           squareSize={64}
           direction="diagonal"
-          borderColor="rgba(198,170,76,0.20)"
+          borderColor="rgba(198,170,76,0.35)"
           hoverFillColor="rgba(198,170,76,0.08)"
         />
       </div>

@@ -81,7 +81,7 @@ export function usePageEffects(options: PageEffectsOptions = {}) {
         bull.style.transition = 'opacity 1s cubic-bezier(0,0,.2,1),transform 1s cubic-bezier(0,0,.2,1)';
       }
       const introTimer = window.setTimeout(() => {
-        bull.style.opacity = prefersReducedMotion ? '1' : '0.96';
+        bull.style.opacity = '1';
         if (!prefersReducedMotion) bull.style.transform = 'translateX(0)';
         const liveTimer = window.setTimeout(() => {
           bull.classList.add('bull-live');
