@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cumplimiento Regulatorio — Ascensus Strategic</title>
+  <meta name="robots" content="noindex,follow" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300;1,400&family=Montserrat:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0A0A0A; --bg-elev: #111318;
+      --gold: #C6AA4C; --line: rgba(198,170,76,.15);
+      --text: #F5F3EF; --text-dim: #A8A090; --text-mute: #5E5A52;
+      --serif: "Playfair Display","Times New Roman",serif;
+      --accent: "Cormorant Garamond","Times New Roman",serif;
+      --sans: "Montserrat",system-ui,sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg); color: var(--text);
+      font-family: var(--sans); font-weight: 300;
+      line-height: 1.75; -webkit-font-smoothing: antialiased;
+    }
+    body::after {
+      content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 9990;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      opacity: .028; mix-blend-mode: overlay;
+    }
+    a { color: inherit; text-decoration: none; }
+
+    .top-bar {
+      border-bottom: 1px solid var(--line); padding: 24px 40px;
+      display: flex; align-items: center; justify-content: space-between;
+      position: sticky; top: 0; background: rgba(10,10,10,.92);
+      backdrop-filter: blur(20px); z-index: 10;
+    }
+    .brand { font-family: var(--serif); font-size: 18px; font-weight: 500; letter-spacing: .02em; }
+    .brand span { color: var(--gold); font-family: var(--accent); font-style: italic; font-size: 1.18em; }
+    .back-link {
+      font-size: 11px; font-weight: 400; letter-spacing: .16em;
+      text-transform: uppercase; color: var(--text-mute); transition: color .2s;
+    }
+    .back-link:hover { color: var(--gold); }
+
+    .page { max-width: 760px; margin: 0 auto; padding: 80px 40px 120px; }
+    .eyebrow { font-size: 10px; letter-spacing: .28em; text-transform: uppercase; color: var(--gold); margin-bottom: 20px; }
+    .page-title { font-family: var(--serif); font-size: clamp(28px, 5vw, 42px); font-weight: 400; line-height: 1.15; margin-bottom: 12px; }
+    .page-title em { font-family: var(--accent); font-style: italic; color: var(--gold); font-size: 1.1em; }
+    .updated { font-size: 12px; color: var(--text-mute); margin-bottom: 64px; padding-bottom: 40px; border-bottom: 1px solid var(--line); }
+
+    section { margin-bottom: 52px; }
+    h2 {
+      font-size: 10px; font-weight: 500; letter-spacing: .22em;
+      text-transform: uppercase; color: var(--gold);
+      margin-bottom: 20px; padding-bottom: 12px; border-bottom: 1px solid var(--line);
+    }
+    p { color: var(--text-dim); font-size: 14px; margin-bottom: 16px; }
+    p:last-child { margin-bottom: 0; }
+    strong { color: var(--text); font-weight: 500; }
+
+    ul { list-style: none; padding: 0; margin-bottom: 0; }
+    ul li {
+      font-size: 14px; color: var(--text-dim);
+      padding: 10px 0 10px 20px; border-bottom: 1px solid rgba(198,170,76,.07);
+      position: relative;
+    }
+    ul li:last-child { border-bottom: none; }
+    ul li::before { content: '—'; position: absolute; left: 0; color: var(--gold); opacity: .6; }
+
+    .disclaimer {
+      border: 1px solid var(--line); border-radius: 2px;
+      padding: 24px 28px; margin-top: 0;
+    }
+    .disclaimer p { font-size: 13px; color: var(--text-mute); margin-bottom: 8px; }
+    .disclaimer p:last-child { margin-bottom: 0; }
+
+    .footer-note {
+      margin-top: 80px; padding-top: 32px; border-top: 1px solid var(--line);
+      font-size: 12px; color: var(--text-mute); text-align: center; line-height: 1.6;
+    }
+
+    @media (max-width: 600px) {
+      .top-bar { padding: 20px 24px; }
+      .page { padding: 48px 24px 80px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="top-bar">
+  <a href="/" class="brand">Ascensus <span>Strategic</span></a>
+  <a href="/" class="back-link">← Inicio</a>
+</nav>
+
+<main class="page">
+
+  <div class="eyebrow">Legal</div>
+  <h1 class="page-title">Política de <em>Cumplimiento</em></h1>
+  <p class="updated">Última actualización: junio de 2026</p>
+
+  <section>
+    <h2>Naturaleza de la actividad</h2>
+    <p>Ascensus Strategic opera como <strong>Oficina de Administración Patrimonial</strong> con sede en Escazú, Costa Rica. Nuestra actividad comprende asesoría financiera independiente, estructuración de portafolios de inversión, planificación patrimonial y servicios relacionados para familias, empresarios e inversionistas.</p>
+    <p>Actuamos como asesores independientes, sin conflictos de interés derivados de la distribución de productos propios. Nuestras recomendaciones se fundamentan exclusivamente en el interés y los objetivos de cada cliente.</p>
+  </section>
+
+  <section>
+    <h2>Marco regulatorio</h2>
+    <p>Desarrollamos nuestra actividad en cumplimiento del marco legal aplicable en Costa Rica, que incluye entre otras:</p>
+    <ul>
+      <li><strong>Ley Reguladora del Mercado de Valores (N° 7732)</strong> — marco general para la actividad de asesoría en valores</li>
+      <li><strong>Ley Orgánica del Banco Central de Costa Rica (N° 7558)</strong> — regulación del sistema financiero nacional</li>
+      <li><strong>Normativa SUGEVAL y SUGEF</strong> — directrices de la Superintendencia General de Valores y de Entidades Financieras</li>
+      <li><strong>Ley de Protección de la Persona frente al Tratamiento de sus Datos Personales (N° 8968)</strong> — protección de datos de clientes</li>
+      <li><strong>Código de Comercio de Costa Rica</strong> — régimen general de actividades comerciales</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Prevención de legitimación de capitales</h2>
+    <p>Ascensus Strategic aplica una política estricta de prevención de legitimación de capitales y financiamiento al terrorismo, conforme a:</p>
+    <ul>
+      <li><strong>Ley N° 7786</strong> y sus reformas — Ley sobre estupefacientes, sustancias psicotrópicas y legitimación de capitales</li>
+      <li><strong>Recomendaciones del GAFI / FATF</strong> — estándares internacionales de prevención</li>
+      <li><strong>Normativa CONASSIF</strong> — lineamientos del Consejo Nacional de Supervisión del Sistema Financiero</li>
+    </ul>
+    <p>En ese marco aplicamos procedimientos de <strong>Conozca a su Cliente (KYC)</strong> y debida diligencia para todos nuestros clientes, incluyendo verificación de identidad, origen lícito de fondos y perfil de riesgo. Nos reservamos el derecho de no iniciar o de dar por terminada una relación de asesoría si no se cumplen estos requisitos.</p>
+  </section>
+
+  <section>
+    <h2>Conflictos de interés</h2>
+    <p>Ascensus Strategic no percibe comisiones ni retribuciones de emisores, fondos o entidades financieras por recomendar sus productos. Nuestra única contraprestación es el honorario acordado con cada cliente.</p>
+    <p>Cualquier situación potencial de conflicto de interés es comunicada de forma proactiva al cliente antes de emitir cualquier recomendación.</p>
+  </section>
+
+  <section>
+    <h2>Gestión de la información confidencial</h2>
+    <p>Toda la información financiera, patrimonial y personal compartida por nuestros clientes se trata con el más alto nivel de confidencialidad. El personal de Ascensus Strategic está sujeto a un deber de discreción tanto durante como después de la relación de asesoría.</p>
+    <p>Los datos de clientes no son compartidos con terceros salvo obligación legal, consentimiento expreso del titular, o necesidad operativa directamente relacionada con la prestación del servicio.</p>
+  </section>
+
+  <section>
+    <h2>Aviso de inversión</h2>
+    <div class="disclaimer">
+      <p>La información y los análisis proporcionados por Ascensus Strategic tienen carácter orientativo y no constituyen una garantía de resultados. Toda inversión conlleva riesgos, incluyendo la posible pérdida parcial o total del capital.</p>
+      <p>Los rendimientos pasados no son indicativos de resultados futuros. Cada cliente debe evaluar si una inversión es adecuada para su situación financiera, objetivos y tolerancia al riesgo, con el apoyo de nuestros asesores y, cuando corresponda, de profesionales legales o fiscales independientes.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contacto de cumplimiento</h2>
+    <p>Para consultas relacionadas con nuestra política de cumplimiento, puede escribirnos a:</p>
+    <p><a href="mailto:info@ascentrategic.com" style="color:var(--gold)">info@ascentrategic.com</a> · (506) 8815-8332</p>
+    <p>Oficina: Edificio Corporativo Centro 27, 3er piso · Escazú, San José · Costa Rica<br/>Atención: Lunes a viernes, 8:00 AM – 5:00 PM · Solo con cita previa</p>
+  </section>
+
+  <div class="footer-note">
+    © 2026 Ascensus Strategic · Escazú, Costa Rica ·
+    <a href="/aviso-legal.html" style="color:var(--text-mute)">Aviso Legal</a> ·
+    <a href="/privacidad.html" style="color:var(--text-mute)">Privacidad</a>
+  </div>
+
+</main>
+</body>
+</html>
