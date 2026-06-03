@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 import type { FormEvent, MouseEvent } from 'react';
 
-const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbw7zfAuaOLqCpo28UeQXlv-A3YMAmaPdAp77EQ5_XhZqusYRpO7253ixLiNLhubRGVB/exec';
+const WEB3FORMS_URL = 'https://api.web3forms.com/submit';
+const ACCESS_KEY = import.meta.env.VITE_WEB3FORMS_KEY as string;
 
 type Status = 'idle' | 'sending' | 'success' | 'error';
 
@@ -31,18 +32,22 @@ export default function ContactModal() {
     setStatus('sending');
     const fd = new FormData(event.currentTarget);
     const payload = {
+      access_key: ACCESS_KEY,
+      subject: 'Nueva consulta — Ascentrategic',
+      from_name: 'Ascentrategic Formulario Web',
       nombre:   fd.get('nombre'),
       email:    fd.get('email'),
       servicio: fd.get('servicio'),
       mensaje:  fd.get('mensaje'),
     };
     try {
-      await fetch(SCRIPT_URL, {
+      const res = await fetch(WEB3FORMS_URL, {
         method: 'POST',
-        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify(payload),
       });
-      setStatus('success');
+      const data = await res.json();
+      setStatus(data.success ? 'success' : 'error');
     } catch {
       setStatus('error');
     }

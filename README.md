@@ -1,73 +1,52 @@
-# React + TypeScript + Vite
+# Ascentrategic MVP
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sitio web de la firma de asesoría financiera Ascentrategic. React + TypeScript + Vite, desplegado en GitHub Pages.
 
-Currently, two official plugins are available:
+## Configuración del formulario de contacto (Web3Forms)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+El formulario de contacto usa [Web3Forms](https://web3forms.com/) para enviar correos a `info@ascentrategic.com` sin necesidad de backend.
 
-## React Compiler
+### Desarrollo local
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Crea el archivo `.env.local` en la raíz del proyecto (no se sube al repositorio):
 
-## Expanding the ESLint configuration
+   ```
+   VITE_WEB3FORMS_KEY=tu_access_key_aqui
+   ```
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+2. Para obtener tu Access Key:
+   - Ve a https://web3forms.com/
+   - Ingresa `info@ascentrategic.com` → "Get your Access Key"
+   - Verifica el correo de confirmación que llegará a esa dirección
+   - Copia la clave generada y pégala en `.env.local`
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Producción (GitHub Pages)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Agrega `VITE_WEB3FORMS_KEY` como secret en el repositorio de GitHub:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+1. Ve a **Settings → Secrets and variables → Actions**
+2. Crea un nuevo secret: `VITE_WEB3FORMS_KEY` con el valor de tu Access Key
+3. El workflow de CI/CD lo tomará automáticamente como variable de entorno durante el build
+
+---
+
+## Desarrollo
+
+```bash
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Build
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run build
 ```
+
+## Stack
+
+- React 18 + TypeScript
+- Vite
+- React Router DOM
+- Web3Forms (formulario de contacto)
+- GitHub Pages (hosting)
