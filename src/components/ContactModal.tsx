@@ -30,7 +30,7 @@ export default function ContactModal() {
       <div className="modal-box">
         <button className="modal-close" aria-label="Cerrar" onClick={() => setOpen(false)}>✕</button>
         <div className="modal-eyebrow">Conversación privada</div>
-        <h3 className="modal-title" id="modalTitle">Iniciemos una <em>conversación</em></h3>
+        <h3 className="modal-title" id="modalTitle">Envíenos su <em>consulta</em></h3>
         <form onSubmit={handleSubmit}>
           <div className="form-group"><label htmlFor="m-nombre">Nombre completo</label><input id="m-nombre" type="text" name="nombre" placeholder="Su nombre" required /></div>
           <div className="form-group"><label htmlFor="m-email">Correo electrónico</label><input id="m-email" type="email" name="email" placeholder="su@correo.com" required /></div>
