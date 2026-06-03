@@ -92,37 +92,37 @@ export default function Servicios() {
         </div>
         <div className="alianzas-grid">
           <article className="alianza reveal">
-            <div className="alianza-logo"><span className="alianza-logo-text">Prival Securities</span></div>
+            <div className="alianza-logo"><img src="/logos/prival.webp" alt="Prival Securities" /></div>
             <h4>Prival Securities</h4>
             <p>Intermediación bursátil regulada por SUGEVAL.</p>
             <span className="alianza-badge">Patrimonio mín. $300,000</span>
           </article>
           <article className="alianza reveal delay-1">
-            <div className="alianza-logo"><span className="alianza-logo-text">Pan-American Life (PALIG)</span></div>
+            <div className="alianza-logo"><img src="/logos/palig.png" alt="Pan-American Life Insurance Group" /></div>
             <h4>Pan-American Life (PALIG)</h4>
             <p>Seguros de vida patrimoniales.</p>
             <span className="alianza-badge">AM Best 'A' · 49+ países</span>
           </article>
           <article className="alianza reveal delay-2">
-            <div className="alianza-logo"><span className="alianza-logo-text">BMI Financial Group</span></div>
+            <div className="alianza-logo"><img src="/logos/bmi.png" alt="BMI Financial Group" /></div>
             <h4>BMI Financial Group</h4>
             <p>Seguros de vida universales e indexados.</p>
             <span className="alianza-badge">AM Best 'A'</span>
           </article>
           <article className="alianza reveal">
-            <div className="alianza-logo"><span className="alianza-logo-text">Investors Trust</span></div>
+            <div className="alianza-logo"><img src="/logos/investors-trust.png" alt="Investors Trust" /></div>
             <h4>Investors Trust</h4>
             <p>Líder global en productos unit-linked.</p>
             <span className="alianza-badge">AM Best 'A-' · desde $10,000</span>
           </article>
           <article className="alianza reveal delay-1">
-            <div className="alianza-logo"><span className="alianza-logo-text">Red de Real Estate</span></div>
+            <div className="alianza-logo"><img src="/logos/real-estate.svg" alt="Red de Real Estate" /></div>
             <h4>Red de Real Estate</h4>
             <p>Agentes certificados para inversión residencial y comercial.</p>
             <span className="alianza-badge">Nacional e internacional</span>
           </article>
           <article className="alianza reveal delay-2">
-            <div className="alianza-logo"><span className="alianza-logo-text">Abogados Aliados</span></div>
+            <div className="alianza-logo"><img src="/logos/abogados.svg" alt="Abogados Aliados" /></div>
             <h4>Abogados Aliados</h4>
             <p>Estructuración de fideicomisos y planificación sucesoria.</p>
             <span className="alianza-badge">Blindaje patrimonial</span>

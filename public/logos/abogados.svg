@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 52" fill="none" stroke="#111" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Vertical pole -->
+  <line x1="30" y1="6" x2="30" y2="48"/>
+  <!-- Horizontal crossbar -->
+  <line x1="8" y1="12" x2="52" y2="12"/>
+  <!-- Pivot cap -->
+  <circle cx="30" cy="6" r="2.5" fill="#111" stroke="none"/>
+  <!-- Left strings -->
+  <line x1="12" y1="12" x2="8" y2="26"/>
+  <line x1="8" y1="26" x2="20" y2="26"/>
+  <!-- Left pan -->
+  <path d="M6,26 Q14,34 22,26"/>
+  <!-- Right strings -->
+  <line x1="48" y1="12" x2="52" y2="26"/>
+  <line x1="40" y1="26" x2="52" y2="26"/>
+  <!-- Right pan -->
+  <path d="M38,26 Q46,34 54,26"/>
+  <!-- Base -->
+  <line x1="22" y1="48" x2="38" y2="48"/>
+  <line x1="25" y1="44" x2="35" y2="44"/>
+</svg>
