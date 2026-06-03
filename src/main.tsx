@@ -16,7 +16,7 @@ const router = createBrowserRouter([
       { path: 'quienes-somos', element: <QuienesSomos /> },
     ],
   },
-], { basename: '/acscensus_mvp_react' });
+], { basename: '/' });
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
