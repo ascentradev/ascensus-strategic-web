@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import type { FormEvent, MouseEvent } from 'react';
 
-const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzfqfP4it21DYvcIe4XGStGTIEQduCQgrxqNtMHzyUARMgY5mEYQgwFY02ZU0R1Gb0/exec';
+const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbw7zfAuaOLqCpo28UeQXlv-A3YMAmaPdAp77EQ5_XhZqusYRpO7253ixLiNLhubRGVB/exec';
 
 type Status = 'idle' | 'sending' | 'success' | 'error';
 
