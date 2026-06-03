@@ -53,7 +53,7 @@
     .modal-close:hover{border-color:var(--gold);color:var(--gold)}
     .modal-eyebrow{font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin-bottom:20px}
     .modal-title{font-family:var(--serif);font-size:28px;font-weight:400;margin-bottom:32px;line-height:1.2}
-    .modal-title em{font-family:var(--accent);font-style:italic;color:var(--gold);font-size:1.08em}
+    .modal-title em{font-family:var(--accent);font-style:italic;color:var(--gold);font-size:1.28em}
     .form-group{margin-bottom:20px}
     .form-group label{display:block;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--text-dim);margin-bottom:8px}
     .form-group input,.form-group textarea,.form-group select{width:100%;background:var(--bg);border:1px solid var(--line-soft);color:var(--text);font-family:var(--sans);font-size:14px;font-weight:300;padding:14px 16px;border-radius:2px;outline:none;transition:border-color .25s}
