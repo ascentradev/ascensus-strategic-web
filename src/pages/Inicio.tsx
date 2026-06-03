@@ -22,7 +22,7 @@ export default function Inicio() {
           hoverFillColor="rgba(198,170,76,0.08)"
         />
       </div>
-      <img src={`${BASE}bull_transparent.png`} id="heroBull" className="hero-bull" alt="Símbolo de fortaleza patrimonial" width="756" height="1024" />
+      <img src={`${BASE}images/bull_transparent.webp`} id="heroBull" className="hero-bull" alt="Símbolo de fortaleza patrimonial" width="756" height="1024" />
       <div className="container">
         <div className="hero-inner">
           <div className="eyebrow reveal">Oficina de Administración Patrimonial</div>
