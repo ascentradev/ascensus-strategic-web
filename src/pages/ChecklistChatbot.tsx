@@ -3,6 +3,17 @@ import { Link } from 'react-router-dom';
 import Squares from '../components/Squares';
 import '../styles/articulo.css';
 
+function BoldText({ text }: { text: string }) {
+  const parts = text.split(/\*\*(.+?)\*\*/g);
+  return (
+    <>
+      {parts.map((part, i) =>
+        i % 2 === 1 ? <strong key={i}>{part}</strong> : part
+      )}
+    </>
+  );
+}
+
 const ITEMS = [
   {
     num: '01 / Chunking',
@@ -152,9 +163,9 @@ export default function ChecklistChatbot() {
                   <div className="checklist-num">{item.num}</div>
                   <h2 className="checklist-title">{item.title}</h2>
                   <p className="checklist-what">{item.what}</p>
-                  <p className="checklist-text" dangerouslySetInnerHTML={{ __html: item.whatText.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>') }} />
+                  <p className="checklist-text"><BoldText text={item.whatText} /></p>
                   <p className="checklist-what">{item.why}</p>
-                  <p className="checklist-text" dangerouslySetInnerHTML={{ __html: item.whyText.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>') }} />
+                  <p className="checklist-text"><BoldText text={item.whyText} /></p>
                 </article>
               ))}
 
