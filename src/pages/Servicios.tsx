@@ -1,4 +1,5 @@
 import { usePageEffects } from '../hooks/usePageEffects';
+import { Link } from 'react-router-dom';
 import Squares from '../components/Squares';
 import '../styles/servicios.css';
 
@@ -75,7 +76,7 @@ export default function Servicios() {
             <div className="num">07 / Tecnología</div>
             <h3>IA &amp; Análisis de Datos <span className="badge-soon">Próximamente</span></h3>
             <p>Asesoría en IA aplicada, inteligencia patrimonial y análisis de datos para elevar la capacidad de decisión con modelado, automatización y lectura estratégica de información.</p>
-            <div className="arrow-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></div>
+            <Link to="/articulos/checklist-chatbot-ia" className="arrow-icon" aria-label="Checklist pre-despliegue para chatbots IA"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></Link>
           </article>
         </div>
       </div>

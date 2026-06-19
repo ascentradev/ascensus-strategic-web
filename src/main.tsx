@@ -5,6 +5,7 @@ import App from './App';
 import Inicio from './pages/Inicio';
 import Servicios from './pages/Servicios';
 import QuienesSomos from './pages/QuienesSomos';
+import ChecklistChatbot from './pages/ChecklistChatbot';
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,7 @@ const router = createBrowserRouter([
       { index: true, element: <Inicio /> },
       { path: 'servicios', element: <Servicios /> },
       { path: 'quienes-somos', element: <QuienesSomos /> },
+      { path: 'articulos/checklist-chatbot-ia', element: <ChecklistChatbot /> },
     ],
   },
 ], { basename: '/' });
