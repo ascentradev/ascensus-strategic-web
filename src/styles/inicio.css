@@ -36,10 +36,10 @@
     .brand:hover .brand-mark{transform:scale(1.06)}
     .brand-words span{color:var(--gold);font-family:var(--accent);font-style:italic;font-size:1.22em}
     .nav-links{display:flex;align-items:center;gap:32px;list-style:none}
-    .nav-links a{font-size:11px;font-weight:400;letter-spacing:.16em;text-transform:uppercase;color:var(--text-dim);position:relative;padding:6px 0;transition:color .25s}
+    .nav-links a{font-family:'Inter',ui-sans-serif,system-ui,-apple-system,sans-serif;font-size:14px;font-weight:400;letter-spacing:0;text-transform:none;line-height:1.43;color:#f0f0f0;position:relative;padding:6px 0;transition:color .25s}
     .nav-links a:hover,.nav-links a.active{color:var(--gold)}
     .nav-links a::after{content:'';position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .35s var(--ease-out)}
-    .nav-links a:hover::after,.nav-links a.active::after{transform:scaleX(1)}
+    .nav-links a.active::after{transform:scaleX(1)}
     .nav-cta{font-size:11px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--bg);background:var(--gold);padding:12px 32px;border:1px solid var(--gold);border-radius:999px;transition:background .25s,color .25s,box-shadow .25s;cursor:pointer}
     .nav-cta:hover{background:transparent;color:var(--gold);box-shadow:0 0 24px var(--gold-glow)}
     .nav-toggle{display:none;background:transparent;border:1px solid var(--line);color:var(--text);width:42px;height:42px;align-items:center;justify-content:center;cursor:pointer}
