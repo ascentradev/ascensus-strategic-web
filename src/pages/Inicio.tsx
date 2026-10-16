@@ -76,12 +76,6 @@ export default function Inicio() {
             <div className="socio-licencia">Corredor de Bolsa · Licencia N.° 495</div>
             <p className="socio-bio">25 años de experiencia en el mercado financiero, con 10 años en banca y 15 años en administración de inversiones en Puesto de Bolsa regulado. Más de $150M bajo asesoría.</p>
             <p className="socio-bio">Corredor de Bolsa acreditado en Costa Rica, licencia N.° 495. Estudios superiores en Finanzas y Economía con énfasis en Banca y Mercado de Capitales en el ITCR y la UCR. Cursos especializados en Mercados Internacionales y Administración Individual de Portafolios de Inversión en la Bolsa Nacional de Valores.</p>
-            <div className="socio-credenciales">
-              <span className="credencial">Corredor de Bolsa N.° 495</span>
-              <span className="credencial">25 años de experiencia</span>
-              <span className="credencial">ITCR / UCR</span>
-              <span className="credencial">Bolsa Nacional de Valores</span>
-            </div>
           </div>
         </div>
       </div>
