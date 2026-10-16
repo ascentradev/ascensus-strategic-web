@@ -31,7 +31,7 @@ Esta guía describe lo que el sitio usa hoy, extraído de `src/styles/*.css` y `
 |---|---|---|---|
 | Playfair Display | `--serif` | Títulos de sección y de servicio | 400, 500, 600, 700 |
 | Cormorant Garamond | `--accent` | Énfasis en itálica (`em`) y números de lista | 300, 400, 500 (itálica) |
-| Montserrat | `--sans` | Texto de cuerpo, botones y navegación | 300, 400, 500, 600 |
+| Inter | `--sans` | Interfaz y texto general: navegación, eyebrows, section-tags, subtítulo del hero, botones, páginas legales | 300, 400, 500, 600 |
 
 Las tres se cargan desde Google Fonts en `index.html`.
 
@@ -41,7 +41,10 @@ Las tres se cargan desde Google Fonts en `index.html`.
 - Títulos de servicio: 22px, peso 400, interlineado 1.3.
 - Título de pilar: 18px, peso 400.
 - Cuerpo: 14px a 16px, peso 300, interlineado 1.65 a 1.72.
-- Eyebrow y botones: 11px a 12px, mayúsculas, tracking `.16em` a `.28em`, peso 500.
+- Eyebrow y section-tag: Inter 14px, peso 400, mayúsculas, tracking `.28em`.
+- Botones y botón de nav: Inter 14px, peso 500, sin mayúsculas.
+- Enlaces de navegación: Inter 14px, peso 400, sin mayúsculas.
+- Hero: titular en Playfair Display 400 con interlineado 1.0; subtítulo en Inter 18px, peso 400, interlineado 1.6.
 
 **Pendiente:** el sitio usa muchos tamaños intermedios (9px, 10px, 11px, 13px, 15px, entre otros). Antes de consolidar, conviene decidir cuáles se conservan.
 
@@ -62,13 +65,17 @@ Las tres se cargan desde Google Fonts en `index.html`.
 
 ## Componentes
 
-**Botón primario** (`.btn-primary`): fondo dorado, texto negro, pastilla, mayúsculas de 11px. En hover pasa a fondo transparente con borde y texto dorados.
+**Botón primario** (`.btn-primary`): fondo dorado, texto negro, pastilla (999px), padding 12px 16px, Inter 14px peso 500. En hover pasa a fondo transparente con borde y texto dorados.
 
-**Botón ghost** (`.btn-ghost`): fondo transparente, borde `--line`, texto `--text-dim`. En hover el texto y el borde pasan a dorado.
+**Botón ghost** (`.btn-ghost`): fondo transparente, borde `--line`, texto `#f0f0f0`, pastilla (999px), padding 12px 16px. En hover el texto y el borde pasan a dorado.
 
-**Botón de navegación** (`.nav-cta`): igual al primario pero más compacto (padding 12px 32px). En hover aplica un resplandor dorado.
+**Botón de navegación** (`.nav-cta`): dorado, Inter 14px, mayúsculas y minúsculas normales, sin tracking, pastilla, padding 12px 32px. En hover aplica un resplandor dorado.
 
-**Eyebrow** (`.eyebrow`, `.section-tag`): texto dorado de 12px en mayúsculas con un rombo `◆` antes. Se usa encima de cada título de sección.
+**Eyebrow** (`.eyebrow`, `.section-tag`): Inter 14px, mayúsculas, tracking `.28em`, dorado, sin rombo. Se usa encima de cada título de sección.
+
+**Enlaces de navegación** (`.nav-links a`): Inter 14px, peso 400, `#f0f0f0`. En hover y en la página activa el texto pasa a dorado, y solo la página activa muestra la línea dorada inferior.
+
+**Hero** (`.hero h1`, `.hero p`): titular en Playfair Display, peso 400, interlineado 1.0. Subtítulo en Inter 18px, peso 400, color `#a1a4a5`, interlineado 1.6.
 
 **Tarjeta de servicio** (`.service`): fondo negro, padding 44px 36px. Al hacer hover cambia a `--bg-soft` y aparece una línea dorada en la parte inferior. La flecha se desplaza en diagonal.
 
@@ -120,9 +127,9 @@ Al generar UI para Ascentrategic:
 - Fondo: `#0A0A0A`. Texto principal: `#F5F3EF`. Texto secundario: `#A8A090`.
 - Acento: `#C6AA4C`. Todo lo demás es gris cálido o transparencia dorada.
 - Títulos en `Playfair Display`, peso 300, con `em` en `Cormorant Garamond` itálica.
-- Cuerpo en `Montserrat`, peso 300, interlineado 1.65.
-- Botones en pastilla, mayúsculas, tracking `.16em`.
-- Un eyebrow dorado con `◆` antes de cada título de sección.
+- Cuerpo e interfaz en `Inter`, peso 300 para texto general, interlineado 1.65.
+- Botones en pastilla (999px), Inter 14px, sin mayúsculas.
+- Un eyebrow dorado en Inter, mayúsculas con tracking `.28em`, encima de cada título de sección.
 
 ## Inicio rápido
 
@@ -144,7 +151,7 @@ Las variables viven en `:root`. Para un componente nuevo, usa solo estas:
   --text-mute: #6E6960;
   --serif: "Playfair Display", "Times New Roman", serif;
   --accent: "Cormorant Garamond", "Times New Roman", serif;
-  --sans: "Montserrat", system-ui, -apple-system, sans-serif;
+  --sans: "Inter", system-ui, -apple-system, sans-serif;
   --maxw: 1240px;
   --ease: cubic-bezier(.25,.1,.25,1);
   --ease-out: cubic-bezier(0,0,.2,1);

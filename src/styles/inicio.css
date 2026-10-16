@@ -14,7 +14,7 @@
       --text-mute: #6E6960;
       --serif: "Playfair Display","Times New Roman",serif;
       --accent: "Cormorant Garamond","Times New Roman",serif;
-      --sans: "Montserrat",system-ui,-apple-system,sans-serif;
+      --sans: "Inter",system-ui,-apple-system,sans-serif;
       --maxw: 1240px;
       --ease: cubic-bezier(.25,.1,.25,1);
       --ease-out: cubic-bezier(0,0,.2,1);

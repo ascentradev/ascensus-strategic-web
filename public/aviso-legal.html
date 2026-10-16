@@ -8,7 +8,7 @@
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300;1,400&family=Montserrat:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300;1,400&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
   <style>
     :root {
       --bg: #0A0A0A; --bg-elev: #111318;
@@ -16,7 +16,7 @@
       --text: #F5F3EF; --text-dim: #A8A090; --text-mute: #5E5A52;
       --serif: "Playfair Display","Times New Roman",serif;
       --accent: "Cormorant Garamond","Times New Roman",serif;
-      --sans: "Montserrat",system-ui,sans-serif;
+      --sans: "Inter",system-ui,sans-serif;
     }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
@@ -45,8 +45,8 @@
     }
     .brand span { color: var(--gold); font-family: var(--accent); font-style: italic; font-size: 1.18em; }
     .back-link {
-      font-size: 11px; font-weight: 400; letter-spacing: .16em;
-      text-transform: uppercase; color: var(--text-mute);
+      font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif; font-size: 14px; font-weight: 400; letter-spacing: 0;
+      text-transform: none; color: #f0f0f0;
       transition: color .2s;
     }
     .back-link:hover { color: var(--gold); }
@@ -56,7 +56,7 @@
       padding: 80px 40px 120px;
     }
     .eyebrow {
-      font-size: 10px; letter-spacing: .28em; text-transform: uppercase;
+      font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif; font-size: 14px; letter-spacing: .28em; text-transform: uppercase;
       color: var(--gold); margin-bottom: 20px;
     }
     .page-title {
